@@ -8,7 +8,7 @@ class MPesaExpress extends Mpesa
 {
 	
 	// M-Pesa STK Push
-	public function MPesaExpressSTK($amount, $phone, $reference, $trx_desc = "Transaction", $remark = "Transaction")
+	public function request($amount, $phone, $reference, $trx_desc = "Transaction", $remark = "Transaction")
 	{
 	    $phone = '254' . substr($phone, -9);
 	    $timestamp = date('YmdHis');

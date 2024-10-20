@@ -6,7 +6,7 @@ namespace VICTORSDK\Entities;
 class B2CPayment extends Mpesa
 {
 	// M-Pesa B2C Payment Request
-	public function B2CPayment($amount, $receiver, $remarks = 'B2C Payment')
+	public function request($amount, $receiver, $remarks = 'B2C Payment')
 	{
 	    $post_data = [
 	        'InitiatorName' => $this->initiator,

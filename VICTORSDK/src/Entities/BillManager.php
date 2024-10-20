@@ -6,7 +6,7 @@ namespace VICTORSDK\Entities;
  */
 class BillManager extends Mpesa
 {
-	public function BillManager($condition = null, $data = [])
+	public function request($condition = null, $data = [])
 	{
 	    $url = '';
 	    $body = [];

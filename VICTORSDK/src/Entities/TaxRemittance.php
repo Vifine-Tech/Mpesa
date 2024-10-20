@@ -6,7 +6,7 @@ namespace VICTORSDK\Entities;
 class TaxRemittance extends Mpesa
 {
 	// Tax Remittance
-	public function TaxRemittance($amount, $reff, $remarks)
+	public function request($amount, $reff, $remarks)
 	{
 	    $url = '/mpesa/b2b/v1/remittax';
 

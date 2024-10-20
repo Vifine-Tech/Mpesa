@@ -6,7 +6,7 @@ namespace VICTORSDK\Entities;
 class RegisterURL extends Mpesa
 {
 	// Register URL
-	public function registerURL($confirmationURL, $validationURL, $responseType = 'Completed')
+	public function request($confirmationURL, $validationURL, $responseType = 'Completed')
 	{
 	    $post_data = [
 	        'ShortCode' => $this->shortcode,

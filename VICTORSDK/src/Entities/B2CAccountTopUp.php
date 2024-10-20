@@ -7,7 +7,7 @@ namespace VICTORSDK\Entities;
  */
 class B2CAccountTopUp extends Mpesa
 {
-	public function B2CAccountTopUp($amount, $recievingshortcode, $AccountReference, $remarks = 'OK', $Requester = '')
+	public function request($amount, $recievingshortcode, $AccountReference, $remarks = 'OK', $Requester = '')
 	{
 	    $url = $this->url . '/mpesa/b2b/v1/paymentrequest';
 

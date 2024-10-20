@@ -6,7 +6,7 @@
  */
 class BusinessPayBill extends Mpesa
 {
-	public function BusinessPayBill($amount, $recievingshortcode, $AccountReference, $remarks = 'OK')
+	public function request($amount, $recievingshortcode, $AccountReference, $remarks = 'OK')
 	{
 	    $url = $this->url . '/mpesa/b2b/v1/paymentrequest';
 

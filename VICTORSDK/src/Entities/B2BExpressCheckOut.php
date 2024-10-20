@@ -9,7 +9,7 @@
 	{
 		
 		
-		public function B2BExpressCheckOut($receiverShortCode, $amount, $paymentRef, $partnerName)
+		public function request($receiverShortCode, $amount, $paymentRef, $partnerName)
 		{
 		    $url = $this->url . '/v1/ussdpush/get-msisdn';
 

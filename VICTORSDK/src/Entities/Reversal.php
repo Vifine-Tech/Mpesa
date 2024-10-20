@@ -7,7 +7,7 @@ namespace VICTORSDK\Entities;
 class Reversal extends Mpesa
 {
 	// Reversal Transaction
-	public function reversal($transactionId, $amount, $receiverParty, $remarks = 'Reversal')
+	public function request($transactionId, $amount, $receiverParty, $remarks = 'Reversal')
 	{
 	    $post_data = [
 	        'Initiator' => $this->initiator,

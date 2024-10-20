@@ -7,7 +7,7 @@ namespace VICTORSDK\Entities;
  */
 class TransactionStatus extends Mpesa
 {
-	public function transactionStatus($transactionId, $remarks = 'Transaction Status Check', $occasion = 'N/A')
+	public function request($transactionId, $remarks = 'Transaction Status Check', $occasion = 'N/A')
 	{
 	    $post_data = [
 	        'Initiator' => $this->initiator,

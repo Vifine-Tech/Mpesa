@@ -8,7 +8,7 @@
 	{
 		
 		// M-Pesa Account Balance
-		public function accountBalance($remarks = 'Account Balance Check')
+		public function request($remarks = 'Account Balance Check')
 		{
 		    $post_data = [
 		        'Initiator' => $this->initiator,

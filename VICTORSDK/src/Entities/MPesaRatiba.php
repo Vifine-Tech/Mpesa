@@ -6,7 +6,7 @@ namespace VICTORSDK\Entities;
  */
 class MPesaRatiba extends Mpesa
 {
-	public function MPesaRatiba($StandingOrderName, $StartDate, $EndDate, $Amount, $phonenumber, $AccountReference, $TransactionDesc, $Frequency)
+	public function request($StandingOrderName, $StartDate, $EndDate, $Amount, $phonenumber, $AccountReference, $TransactionDesc, $Frequency)
 	{
 	    // 1 - One Off
 	    // 2 - Daily

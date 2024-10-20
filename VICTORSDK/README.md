@@ -15,6 +15,8 @@ This SDK is designed to integrate with M-Pesa APIs.
 ###	To create STK Push
 
 ```	php
+require 'VICTORSDK\Entities\MPesaExpress.php';
+
 use VICTORSDK\Entities\MPesaExpress;
 
 $data = array(
@@ -28,9 +30,45 @@ $data = array(
     'stk_callback_url' => 'https://'
 );
 
-$mpesa = new MPesaExpress($data);
+$mpesa = new Mpesa($data);
 
-return $mpesa->MPesaExpressSTK(100, '254718258849', 'ORDER_4354');
+// Create stk Push using this function
+return $mpesa->stk($amount, $phone, $orderreference);
+
+return  $mpesa->ratiba($StandingOrderName, $StartDate, $EndDate, $Amount, $phonenumber, $AccountReference, $TransactionDesc, $Frequency);
+
+
+return  $mpesa->reverse($transactionId, $amount, $receiverParty, $remarks = 'Reversal');
+
+
+return  $mpesa->remittance($amount, $reff, $remarks);
+
+
+return  $mpesa->status($transactionId, $remarks = 'Transaction Status Check', $occasion = 'N/A');
+
+
+return  $mpesa->qrcode($merchantName, $refNo, $amount, $trxCode, $cpi, $size);
+
+
+return  $mpesa->businesspaybill($amount, $recievingshortcode, $AccountReference, $remarks = 'OK');
+
+
+return  $mpesa->businessbuygoods($amount, $recievingshortcode, $AccountReference, $remarks = 'OK');
+
+
+return  $mpesa->billmanager($condition = null, $data = []);
+
+
+return  $mpesa->b2c($amount, $receiver, $remarks = 'B2C Payment');
+
+
+return  $mpesa->topupb2c($amount, $recievingshortcode, $AccountReference, $remarks = 'OK', $Requester = '');
+
+
+return  $mpesa->b2bexpresscheckout($receiverShortCode, $amount, $paymentRef, $partnerName);
+
+
+return  $mpesa->accountballance($remarks = 'Account Balance Check');
 
 ```
 

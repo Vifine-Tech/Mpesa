@@ -7,7 +7,7 @@ namespace VICTORSDK\Entities;
 class DynamicQR extends Mpesa
 {
 	// Dynamic QR Generation
-	public function dynamicQR($merchantName, $refNo, $amount, $trxCode, $cpi, $size)
+	public function request($merchantName, $refNo, $amount, $trxCode, $cpi, $size)
 	{
 	    $post_data = [
 	        'MerchantName' => $merchantName,

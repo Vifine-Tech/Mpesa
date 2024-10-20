@@ -37,11 +37,11 @@ class CurlRequest
        curl_close($ch);
 
        if ($response === false) {
-           return ['success' => false, 'error' => curl_error($ch)];
+           return ['status' => false, 'error' => curl_error($ch)];
        }
 
        return [
-           'success' => true,
+           'status' => true,
            'response' => json_decode($response, true),
            'httpCode' => $httpCode
        ];
